@@ -1,3 +1,6 @@
+@use './classStyles' as *;
+@use './variables';
+@use './mixinStyles' as *;
 
 .tv {
     margin-left: 20%;
@@ -7,27 +10,9 @@
     }
     
     &__div-quote{
-        position: absolute;
+        @include sideImageStyles (absolute, 29.5%);
         top: 43.2%;
         left: 20%;
-        width: 29.5%;
-        animation: 300ms shake infinite alternate;
-    }
-    
-    @keyframes shake {
-        0% { transform: skewX(-1deg); }
-        3% { transform: skewY(1deg); }
-        5% { transform: skewX(1deg); }
-        8% { transform: skewY(1deg); }
-        10% { transform: skewX(-1deg); }
-        13% { transform: skewY(1deg); }
-        15% { transform: skewX(1deg); }
-        18% { transform: skewY(1deg); }
-        20% { transform: skewX(1deg); }
-        23% { transform: skewY(1deg); }
-        95% { transform: skewY(1deg); } 
-        100% { transform: skewX(1deg); }
-         
     }
 
     &__image{
@@ -36,8 +21,8 @@
     }
 
     &__text{
-        color: #FFD90F;
-        background-color: #3865ff;
+        color: variables.$font-color;
+        background-color: variables.$text-images-background-color;
         font-size: 130%;
     }
 
@@ -46,65 +31,41 @@
         top: 45%;
         left: 30%;
         max-width: 10%;
-        background-color: #3865ff;
+        background-color: variables.$text-images-background-color;
     }
 
     &__characters{
         display: none;
-        background-color: #3865ff;
+        background-color: variables.$text-images-background-color;
         min-height: 300px;
         max-height: 300px;
     }
     
     &__quote-button{
-        border-color: transparent;
-        background-color: transparent;
-        border-radius: 50px;
-        min-width: 61px;
-        max-width: 61px;
-        min-height: 61px;
-        min-height: 61px;
-        cursor: pointer;
+        @extend %buttonStyle;
     }
 
     &__characters-button{
-        border-color: transparent;
-        background-color: transparent;
-        border-radius: 50px;
-        min-width: 61px;
-        max-width: 61px;
-        min-height: 61px;
-        min-height: 61px;
-        cursor: pointer;
+        @extend %buttonStyle;
     }
 
     &__div-button{
-        background-color: transparent;
-        position: absolute;
-        top: 37.5%;
-        right: 40%;
-        border-radius: 50px;
+        @include buttonImageDiv (37.5%);
     }
 
     &__div-image{
-        background-color: transparent;
-        position: absolute;
-        top: 49.8%;
-        right: 40%;
-        border-radius: 50px;
+        @include buttonImageDiv (49.8%);
     }
     
     &__simpsons-images{
 
         &--left{
-            width: 10%;
-            position: absolute;
+            @include sideImageStyles (absolute, 10%);
             left: 0;
             top: 10%;
         }
         &--right{
-            width: 10%;
-            position: absolute;
+            @include sideImageStyles (absolute, 10%);
             right: 0;
         }
     }
@@ -119,9 +80,6 @@
     &__simpsons-images-maggie{
         top: 65%;
         left: 5%;
-    }
-    &__simpsons-images-homer{
-    
     }
     &__simpsons-images-grandpa{
         width: 10%;

@@ -1,22 +1,24 @@
+@use './variables';
+
 .headerDiv{
     width: 100%;
     display: flex;
     justify-content: space-between;
 
     &__heading{
-        color: #FFD90F;
+        color: variables.$font-color;
         text-shadow: 2px 2px 0 #000000;
         font-size: 100px;
         line-height: 100px;
-        background-color: lightskyblue;
+        background-color: variables.$heading-color;
         padding: 40px 40px 0;
     }
 
     &__cloudLeft{
-        height: 18rem;
+        height: variables.$cloud-style;
     }
     
     &__cloudRight{
-        height: 18rem;
+        height: variables.$cloud-style;
     }
 }

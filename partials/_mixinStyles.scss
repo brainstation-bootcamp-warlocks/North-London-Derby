@@ -1,0 +1,12 @@
+@mixin buttonImageDiv ($top) {
+    background-color: transparent;
+    position: absolute;
+    right: 40%;
+    border-radius: 50px;
+    top: $top;
+}
+
+@mixin sideImageStyles ($position, $width) {
+    position: $position;
+    width: $width;
+}
