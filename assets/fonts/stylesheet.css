@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Akbar';
+    src: url('AkbarPlain.woff2') format('woff2'),
+        url('AkbarPlain.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Simpsonfont';
+    src: url('OriginallycompiledbyJonBernhardt.woff2') format('woff2'),
+        url('OriginallycompiledbyJonBernhardt.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

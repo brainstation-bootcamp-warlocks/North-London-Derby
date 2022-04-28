@@ -4,11 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/LLDonuts.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js" type="text/javascript"></script>
+    <title>North London Derby - Simpsons</title>
 </head>
 <body>
-    <main id="quoteMain"></main>
-    <section id="characterDiv"></section>
+    <header>
+        <div class="headerDiv">
+            <img class="headerDiv__cloudRight" src="../North-London-Derby/assets/images/clouds_R.jpg"/>
+            <h1 class="headerDiv__heading">Springfield Hackathon</h1>
+            <img class="headerDiv__cloudLeft" src="../North-London-Derby/assets/images/clouds_L.jpg"/>
+        </div>
+    </header>
+    <main>
+        <section class="tv">
+            <div class="tv__simpsons-images">
+                <img class="tv__simpsons-images--left tv__simpsons-images-bart" src="./assets/images/bart.png" alt="bart"/>
+                <img class="tv__simpsons-images--left tv__simpsons-images-maggie" src="./assets/images/maggie.png" alt="maggie"/>
+                <img class="tv__simpsons-images--left tv__simpsons-images-marge" src="./assets/images/marge.png" alt="marge"/>
+                <img class="tv__simpsons-images--right tv__simpsons-images-homer" src="./assets/images/homer.png" alt="homer"/>
+                <img class="tv__simpsons-images--right tv__simpsons-images-grandpa" src="./assets/images/grandpa.png" alt="grandpa"/>
+                <img class="tv__simpsons-images--right tv__simpsons-images-lisa" src="./assets/images/lisa.png" alt="lisa"/>
+            </div>
+            <div class="tv__div">
+                <img class="tv__image" src="./assets/images/tv.png" alt="simpsons tv set">
+                <div class="tv__div-quote">
+                    <p class="tv__text"> </p>
+                </div>
+                <div class="tv__div-characters">
+                    <img class="tv__characters" src="" alt="displaying simpsons character">
+                </div>
+                <div class="tv__div-button">
+                    <button class="tv__quote-button"></button>
+                </div>
+                <div class="tv__div-image">
+                    <button class="tv__characters-button"></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">North London Derby</p>
+    </footer>
     <script src="./scripts/script.js"></script>
 </body>
 </html>

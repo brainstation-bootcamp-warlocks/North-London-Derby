@@ -1,0 +1,22 @@
+.headerDiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &__heading{
+        color: #FFD90F;
+        text-shadow: 2px 2px 0 #000000;
+        font-size: 100px;
+        line-height: 100px;
+        background-color: lightskyblue;
+        padding: 40px 40px 0;
+    }
+
+    &__cloudLeft{
+        height: 18rem;
+    }
+    
+    &__cloudRight{
+        height: 18rem;
+    }
+}

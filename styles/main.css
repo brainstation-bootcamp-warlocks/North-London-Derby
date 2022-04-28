@@ -1,0 +1,217 @@
+@font-face {
+  font-family: "Akbar";
+  src: url("../assets/fonts/AkbarPlain.woff2") format("woff2"), url("../assets/fonts/AkbarPlain.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Simpsonfont";
+  src: url("../assets/fonts/OriginallycompiledbyJonBernhardt.woff2") format("woff2"), url("../assets/fonts/OriginallycompiledbyJonBernhardt.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+.tv {
+  margin-left: 20%;
+}
+.tv__div {
+  position: relative;
+}
+.tv__div-quote {
+  position: absolute;
+  top: 43.2%;
+  left: 20%;
+  width: 29.5%;
+  -webkit-animation: 300ms shake infinite alternate;
+          animation: 300ms shake infinite alternate;
+}
+@-webkit-keyframes shake {
+  0% {
+    transform: skewX(-1deg);
+  }
+  3% {
+    transform: skewY(1deg);
+  }
+  5% {
+    transform: skewX(1deg);
+  }
+  8% {
+    transform: skewY(1deg);
+  }
+  10% {
+    transform: skewX(-1deg);
+  }
+  13% {
+    transform: skewY(1deg);
+  }
+  15% {
+    transform: skewX(1deg);
+  }
+  18% {
+    transform: skewY(1deg);
+  }
+  20% {
+    transform: skewX(1deg);
+  }
+  23% {
+    transform: skewY(1deg);
+  }
+  95% {
+    transform: skewY(1deg);
+  }
+  100% {
+    transform: skewX(1deg);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: skewX(-1deg);
+  }
+  3% {
+    transform: skewY(1deg);
+  }
+  5% {
+    transform: skewX(1deg);
+  }
+  8% {
+    transform: skewY(1deg);
+  }
+  10% {
+    transform: skewX(-1deg);
+  }
+  13% {
+    transform: skewY(1deg);
+  }
+  15% {
+    transform: skewX(1deg);
+  }
+  18% {
+    transform: skewY(1deg);
+  }
+  20% {
+    transform: skewX(1deg);
+  }
+  23% {
+    transform: skewY(1deg);
+  }
+  95% {
+    transform: skewY(1deg);
+  }
+  100% {
+    transform: skewX(1deg);
+  }
+}
+.tv__image {
+  width: 50%;
+  padding-left: 10rem;
+}
+.tv__text {
+  color: #FFD90F;
+  background-color: #3865ff;
+  font-size: 130%;
+}
+.tv__div-characters {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  max-width: 10%;
+  background-color: #3865ff;
+}
+.tv__characters {
+  display: none;
+  background-color: #3865ff;
+  min-height: 300px;
+  max-height: 300px;
+}
+.tv__quote-button {
+  border-color: transparent;
+  background-color: transparent;
+  border-radius: 50px;
+  min-width: 61px;
+  max-width: 61px;
+  min-height: 61px;
+  min-height: 61px;
+  cursor: pointer;
+}
+.tv__characters-button {
+  border-color: transparent;
+  background-color: transparent;
+  border-radius: 50px;
+  min-width: 61px;
+  max-width: 61px;
+  min-height: 61px;
+  min-height: 61px;
+  cursor: pointer;
+}
+.tv__div-button {
+  background-color: transparent;
+  position: absolute;
+  top: 37.5%;
+  right: 40%;
+  border-radius: 50px;
+}
+.tv__div-image {
+  background-color: transparent;
+  position: absolute;
+  top: 49.8%;
+  right: 40%;
+  border-radius: 50px;
+}
+.tv__simpsons-images--left {
+  width: 10%;
+  position: absolute;
+  left: 0;
+  top: 10%;
+}
+.tv__simpsons-images--right {
+  width: 10%;
+  position: absolute;
+  right: 0;
+}
+.tv__simpsons-images-marge {
+  width: 8%;
+  top: 75%;
+}
+.tv__simpsons-images-bart {
+  top: 35%;
+}
+.tv__simpsons-images-maggie {
+  top: 65%;
+  left: 5%;
+}
+.tv__simpsons-images-grandpa {
+  width: 10%;
+  top: 89%;
+}
+.tv__simpsons-images-lisa {
+  top: 69%;
+  right: 5%;
+}
+
+.headerDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.headerDiv__heading {
+  color: #FFD90F;
+  text-shadow: 2px 2px 0 #000000;
+  font-size: 100px;
+  line-height: 100px;
+  background-color: lightskyblue;
+  padding: 40px 40px 0;
+}
+.headerDiv__cloudLeft {
+  height: 18rem;
+}
+.headerDiv__cloudRight {
+  height: 18rem;
+}
+
+* {
+  font-family: "Akbar", "Simpsonfont", serif;
+  margin: 0;
+  padding: 0;
+  background-color: none;
+}/*# sourceMappingURL=main.css.map */
